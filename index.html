@@ -5,19 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toast Adventure 🍞</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffbe6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #game {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      margin: 20px auto;
+      border: 2px solid #333;
+      background: #f7f1e3;
+    }
+
+    #toast, #monster, #butter {
+      position: absolute;
+      font-size: 32px;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Toast Adventure!</h1>
-  <p>Help Toast escape the kitchen and dodge the evil butter monsters!</p>
-  
+  <p>Help Toast escape the jam and collect the butter!</p>
+
   <div id="game">
     <div id="toast">🍞</div>
-    <div id="monster">🧈</div>
+    <div id="monster">🥫</div>
   </div>
 
-  <p>Use the arrow keys to move Toast left or right.</p>
-  <p id="score">Score: 0</p>
-
+  <p>Use the arrow keys to move Toast around.</p>
   <script src="script.js"></script>
 </body>
 </html>
